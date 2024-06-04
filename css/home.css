@@ -1,0 +1,84 @@
+
+.ini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.ini ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ini li {
+    margin: 1em;
+}
+
+button.logout {
+    background: white;
+    color: rgb(78, 78, 160);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+div.logo {
+    width: 99%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img {
+    width: 100%;
+    max-width: 30%;
+    display: inline-block;
+}
+
+.ini-row {
+    width: 99%;
+    margin: auto;
+}
+.ini a {
+    color: white;
+}
+
+.intro span {
+    display: block;
+    margin: .5em;
+    padding: .5em;
+
+}
+
+
+
+@media (min-width: 560px) {
+    .ini {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.logo {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ini-row {
+        width: 56%;
+        margin-left: auto;
+    }
+    .ini ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ini li {
+        margin: auto;
+    }
+}

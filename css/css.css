@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    /* background-image: url('../logo2.jpg'); */
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.admin-container {
+    display: flex;
+    height: 100vh;
+}
+
+.container-in {
+    max-width: 50%;
+    margin: 2em auto;
+}
+
+.container {
+    margin: auto;
+    max-width: 70%;
+    min-height: 100vh;
+    text-align: center;
+    background: rgb(211, 211, 249);
+    border:2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.uname {
+    font-weight: bold;
+    font-size: larger;
+    color: #aaa;
+}
+
+.container-home {
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 720px;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+ }
+
+.col {
+    width: 45%;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: .25em;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    padding: .8em;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn {
+    padding: 1em;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(78, 78, 160);
+    border: none;
+    border-radius: 0.25em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /*margin-top: 1em;*/
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar .container-home {
+    margin-bottom: 10px;
+}
+
+.sidebar .btn-add {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+.sidebar .btn-add:hover {
+    background-color: #555;
+}
+
+.sidebar .btn-add.active {
+    background-color: #555;
+}
+
+.main-content {
+    flex: 1;
+    padding: 1em;
+    overflow-y: auto;
+    background: rgb(211, 211, 249);
+    text-align: center;
+}
+
+.main-content h2,
+.container-in h1 {
+    text-align: center;
+    max-width: 50%;
+    margin: 1em auto;
+}
+
+/* Style for the header */
+header {
+    background: rgb(78, 78, 160);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    color: #fff;
+}
+
+main h1 {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+.admin-header h1 {
+    margin: 0;
+}
+
+/* Style for links */
+a {
+    color: rgb(78, 78, 160);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    font-size: 2rem;
+}
+
+/*************************
+****************
+****************
+*************************/
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 2rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-nav .ul-admin {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.col {
+    width: 45%;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: .25em;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    padding: .8em;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn {
+    padding: 1em;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(78, 78, 160);
+    border: none;
+    border-radius: 0.25em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /*margin-top: 1em;*/
+
+}
+
+button.logout {
+    background: #999;
+    color: rgb(78, 78, 160);
+}
+
+button.btn:hover {
+    background-color: rgba(78, 78, 160, 0.6);
+}
+button.logout:hover {
+    background-color: #aaa;
+}
+
+.error-msg {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
