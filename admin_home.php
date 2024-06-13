@@ -35,6 +35,8 @@
                         </form>
                     </li>
                     <?php
+                        } else {
+                            header("Location: login.php");
                         }
                     ?>
                 </ul>
@@ -70,6 +72,10 @@
             <h2>TELECOM SUBSCRIBER MANAGEMENT SYSTEM</h2>
             <?php include_once "./intro.php"; ?>
         </main>
+        <footer>
+            <p>&copy; 2024 Telecom Subscriber Management. All rights reserved.</p>
+            <p><a href="mailto:franktchetta54@gmail.com">franktchetta54@gmail.com</a></p>
+        </footer>
     </div>
 
     <script>
