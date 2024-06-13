@@ -1,24 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $messageContent = htmlspecialchars($_POST['message']);
-
-    $to = 'franktchetta54@gmail.com';
-    $subject = 'New Contact Message from ' . $name;
-    $message = "Name: $name\nEmail: $email\n\nMessage:\n$messageContent";
-    $headers = 'From: ' . $email . "\r\n" .
-               'Reply-To: ' . $email . "\r\n" .
-               'X-Mailer: PHP/' . phpversion();
-
-    if (mail($to, $subject, $message, $headers)) {
-        $message = "Your message has been sent successfully!";
-    } else {
-        $message = "There was a problem sending your message. Please try again.";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
