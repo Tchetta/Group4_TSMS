@@ -41,7 +41,11 @@
             </form>
             <?php
                 if(isset($_GET['error'])) {
-                    echo "<p class=\"error\">{$_GET['error']}/<p>";
+                    $error = htmlspecialchars($_GET['error']);
+                    if($error == 'none')
+                        echo "<p style='color: green'>Sign UP successful</p>";
+                    else
+                        echo "<script>alert('{$_GET['error']}'<script>";
                 }
             ?>
         </main>

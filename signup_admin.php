@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="./css/css.css">
     <link rel="stylesheet" href="./css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        footer {
+            position: static;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -67,7 +73,6 @@
                                 <option value="">Select Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
-                                <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -119,14 +124,20 @@
                 elseif ($error == "unknown") {
                     echo '<p class="error-msg">'. $_SESSION['Error']. '.</p>';
                 }
+                if($error == 'none') {
+                    echo "<p style='color: green'>Sign UP successful</p>";
+                } else {
+                    echo "<script>alert('" . htmlspecialchars($_GET['error'], ENT_QUOTES, 'UTF-8') . "');</script>";
+                }
             }
+            
             ?>
         </main>
+        </div>
         <footer>
             <p>&copy; 2024 Telecom Subscriber Management. All rights reserved.</p>
             <p><a href="mailto:franktchetta54@gmail.com">franktchetta54@gmail.com</a></p>
         </footer>
-        </div>
     </div>
 </body>
 </html>

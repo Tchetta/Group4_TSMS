@@ -17,7 +17,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['first_name']) && !empty($_POST['first_name'])) {
         $first_name = htmlentities($_POST['first_name']);
     } else {
-        header("location: ../signup.php?error=emptyfirstname");
+        header("location: ../signup_admin.php?error=emptyfirstname");
         exit();
     }
 
@@ -25,7 +25,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['last_name']) && !empty($_POST['last_name'])) {
         $last_name = htmlentities($_POST['last_name']);
     } else {
-        header("location: ../signup.php?error=emptylastname");
+        header("location: ../signup_admin.php?error=emptylastname");
         exit();
     }
 
@@ -33,7 +33,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['password']) && !empty($_POST['password'])) {
         $password = $_POST['password'];
     } else {
-        header("location: ../signup.php?error=emptypassword");
+        header("location: ../signup_admin.php?error=emptypassword");
         exit();
     }
 
@@ -41,7 +41,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['reenter_pwd']) && !empty($_POST['reenter_pwd']) && $_POST['reenter_pwd'] === $password) {
         $reenter_pwd = $_POST['reenter_pwd'];
     } else {
-        header("location: ../signup.php?error=passwordmismatch");
+        header("location: ../signup_admin.php?error=passwordmismatch");
         exit();
     }
 
@@ -49,7 +49,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $email = htmlentities($_POST['email']);
     } else {
-        header("location: ../signup.php?error=invalidemail");
+        header("location: ../signup_admin.php?error=invalidemail");
         exit();
     }
 
@@ -57,7 +57,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['dob']) && !empty($_POST['dob'])) {
         $dob = $_POST['dob'];
     } else {
-        header("location: ../signup.php?error=emptydob");
+        header("location: ../signup_admin.php?error=emptydob");
         exit();
     }
 
@@ -65,7 +65,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['gender']) && ($_POST['gender'] == 'male' || $_POST['gender'] == 'female' || $_POST['gender'] == 'other')) {
         $gender = $_POST['gender'];
     } else {
-        header("location: ../signup.php?error=invalidgender");
+        header("location: ../signup_admin.php?error=invalidgender");
         exit();
     }
 
@@ -73,7 +73,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['country']) && !empty($_POST['country'])) {
         $country = htmlentities($_POST['country']);
     } else {
-        header("location: ../signup.php?error=emptycountry");
+        header("location: ../signup_admin.php?error=emptycountry");
         exit();
     }
 
@@ -81,7 +81,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['cname']) && !empty($_POST['cname'])) {
         $cname = htmlentities($_POST['cname']);
     } else {
-        header("location: ../signup.php?error=emptycname");
+        header("location: ../signup_admin.php?error=emptycname");
         exit();
     }
 
@@ -89,7 +89,7 @@ if (isset($_POST['submit_signup'])) {
     if (isset($_POST['location']) && !empty($_POST['location'])) {
         $location = htmlentities($_POST['location']);
     } else {
-        header("location: ../signup.php?error=emptycountry");
+        header("location: ../signup_admin.php?error=emptycountry");
         exit();
     }
 
