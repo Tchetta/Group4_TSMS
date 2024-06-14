@@ -3,7 +3,7 @@
 # Telecom Subscriber Management System (TSMS)
 
 ## Introduction
-The Telecom Subscriber Management System (TSMS) is a web-based application developed as a school project for the course CEF468 - Database and PHP Programming. It aims to streamline the management of subscriber data, services, billing, and user authentication for telecom operators.
+The Telecom Subscriber Management System (TSMS) is a web-based application developed as a school project for the course CEF468 - Database and PHP Programming. It aims to streamline subscriber data management, services, billing, and user authentication for telecom operators.
 
 ## Technologies Used
 - **Backend:** PHP
@@ -21,4 +21,4 @@ The Telecom Subscriber Management System (TSMS) is a web-based application devel
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/telecom-subscriber-management.git
+   git clone https://github.com/Tchetta/Group4_TSMS.git
